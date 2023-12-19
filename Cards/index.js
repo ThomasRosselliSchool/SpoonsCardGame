@@ -42,10 +42,10 @@ class Player {
     }
 
     checkForWin() {
-        let s1 = this.hand[0].split("/")[0];
-        let s2 = this.hand[1].split("/")[0];
-        let s3 = this.hand[2].split("/")[0];
-        let s4 = this.hand[3].split("/")[0];
+        let s1 = this.hand[0].split("/")[1];
+        let s2 = this.hand[1].split("/")[1];
+        let s3 = this.hand[2].split("/")[1];
+        let s4 = this.hand[3].split("/")[1];
         
         if (s1 == s2 && s3 == s4 && s2 == s3) {
             console.log("WINNER " + this.hand)
